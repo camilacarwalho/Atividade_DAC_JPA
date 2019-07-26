@@ -4,7 +4,8 @@ import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.io.Serializable;
-import java.time.LocalDate;
+import java.util.Date;
+
 
 @Entity
 public class Pessoa implements Serializable {
@@ -12,13 +13,13 @@ public class Pessoa implements Serializable {
     @Id
     private String cpf;
     private int idade;
-    private LocalDate dataNascimento;
+    private Date dataNascimento;
     @Embedded
     private Endereco endereco;
 
     public Pessoa() { }
 
-    public Pessoa(String nome, String cpf, int idade, LocalDate dataNascimento, Endereco endereco) {
+    public Pessoa(String nome, String cpf, int idade, Date dataNascimento, Endereco endereco) {
         this.nome = nome;
         this.cpf = cpf;
         this.idade = idade;
@@ -50,11 +51,11 @@ public class Pessoa implements Serializable {
         this.idade = idade;
     }
 
-    public LocalDate getDataNascimento() {
+    public Date getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(LocalDate dataNascimento) {
+    public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
