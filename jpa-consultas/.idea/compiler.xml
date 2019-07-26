@@ -12,7 +12,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+<<<<<<< HEAD
       <module name="jpa-consultas-vol2" target="1.5" />
+=======
+      <module name="jpa-consulta" target="8" />
+>>>>>>> 42f2a85dc32deed182b61cdb36f87c0483e6c748
     </bytecodeTargetLevel>
   </component>
 </project>

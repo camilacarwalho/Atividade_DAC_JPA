@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/jpa-consultas.iml" filepath="$PROJECT_DIR$/jpa-consultas.iml" />
       <module fileurl="file://$PROJECT_DIR$/../jpa-consultas-vol2/jpa-consultas-vol2.iml" filepath="$PROJECT_DIR$/../jpa-consultas-vol2/jpa-consultas-vol2.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/jpa-consulta.iml" filepath="$PROJECT_DIR$/jpa-consulta.iml" />
+>>>>>>> 42f2a85dc32deed182b61cdb36f87c0483e6c748
     </modules>
   </component>
 </project>
