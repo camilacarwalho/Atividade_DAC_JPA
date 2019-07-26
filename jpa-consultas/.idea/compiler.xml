@@ -8,7 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="jpa-consulta" />
         <module name="jpa-consultas" />
+        <module name="jpa-consultas-vol2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jpa-consultas-vol2" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
