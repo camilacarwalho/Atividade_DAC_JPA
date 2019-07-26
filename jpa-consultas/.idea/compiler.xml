@@ -10,5 +10,8 @@
         <module name="jpa-consultas" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jpa-consulta" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -2,10 +2,15 @@ package domain;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Professor extends Pessoa  {
+    @OneToMany
+    private Set<Telefone> telefones = new HashSet<>();
 
     private Double salario;
 
