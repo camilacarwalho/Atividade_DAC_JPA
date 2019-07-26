@@ -3,13 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="6a928c58-9232-42b0-b965-8a489c19a023" name="Default Changelist" comment="">
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 =======
       <change afterPath="$PROJECT_DIR$/src/main/java/domain/Telefone.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/domain/TelefoneType.java" afterDir="false" />
+>>>>>>> 8a131086c3cea50d947b3e37197def79341331de
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Endereco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/domain/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Pessoa.java" afterDir="false" />
 >>>>>>> f26a14bf6407b9ef6c52621c0e0f715fd83b8dfd
     </list>
@@ -43,15 +45,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/domain/Pessoa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="120">
+              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+<<<<<<< HEAD
+                <element signature="e#694#695#0" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+                <element signature="e#761#762#0" expanded="true" />
+                <element signature="e#793#794#0" expanded="true" />
+                <element signature="e#823#824#0" expanded="true" />
+                <element signature="e#849#850#0" expanded="true" />
+                <element signature="e#887#888#0" expanded="true" />
+                <element signature="e#917#918#0" expanded="true" />
+                <element signature="e#946#947#0" expanded="true" />
+                <element signature="e#974#975#0" expanded="true" />
+                <element signature="e#1013#1014#0" expanded="true" />
+                <element signature="e#1047#1048#0" expanded="true" />
+                <element signature="e#1086#1087#0" expanded="true" />
+                <element signature="e#1123#1124#0" expanded="true" />
+=======
                 <element signature="e#842#843#0" expanded="true" />
 <<<<<<< HEAD
                 <element signature="e#876#877#0" expanded="true" />
 =======
                 <element signature="e#879#880#0" expanded="true" />
+>>>>>>> 8a131086c3cea50d947b3e37197def79341331de
                 <element signature="e#942#943#0" expanded="true" />
                 <element signature="e#994#995#0" expanded="true" />
                 <element signature="e#1193#1194#0" expanded="true" />
@@ -83,12 +102,16 @@
       </file>
 <<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
+=======
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/domain/Autor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
 =======
       <file pinned="false" current-in-tab="true">
+>>>>>>> 8a131086c3cea50d947b3e37197def79341331de
         <entry file="file://$PROJECT_DIR$/src/main/java/domain/Telefone.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -110,6 +133,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/domain/Professor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#578#579#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/domain/TelefoneType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -123,10 +161,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>LocalDate</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Date</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -137,6 +183,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Endereco.java" />
 <<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/main/java/domain/TelefoneType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/Telefone.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/Professor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/Pessoa.java" />
+=======
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/domain/Livro.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Professor.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Autor.java" />
@@ -145,6 +197,7 @@
         <option value="$PROJECT_DIR$/src/main/java/domain/TelefoneType.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Telefone.java" />
 >>>>>>> f26a14bf6407b9ef6c52621c0e0f715fd83b8dfd
+>>>>>>> 8a131086c3cea50d947b3e37197def79341331de
       </list>
     </option>
   </component>
@@ -157,10 +210,14 @@
   </component>
 <<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
+=======
+<<<<<<< HEAD
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="684" />
     <option name="width" value="682" />
 =======
   <component name="ProjectFrameBounds" extendedState="4">
+>>>>>>> 8a131086c3cea50d947b3e37197def79341331de
     <option name="x" value="591" />
     <option name="width" value="775" />
 >>>>>>> f26a14bf6407b9ef6c52621c0e0f715fd83b8dfd
@@ -293,15 +350,22 @@
       <option name="presentableId" value="Default" />
       <updated>1564139032515</updated>
 <<<<<<< HEAD
+      <workItem from="1564139033912" duration="1764000" />
+=======
+<<<<<<< HEAD
       <workItem from="1564139033912" duration="478000" />
       <workItem from="1564140055790" duration="266000" />
 =======
       <workItem from="1564139033912" duration="1136000" />
 >>>>>>> f26a14bf6407b9ef6c52621c0e0f715fd83b8dfd
+>>>>>>> 8a131086c3cea50d947b3e37197def79341331de
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="1764000" />
+=======
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="744000" />
   </component>
@@ -312,9 +376,10 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17824773" />
 =======
     <option name="totallyTimeSpent" value="1136000" />
+>>>>>>> 8a131086c3cea50d947b3e37197def79341331de
   </component>
   <component name="ToolWindowManager">
-    <frame x="591" y="0" width="775" height="727" extended-state="4" />
+    <frame x="0" y="-1" width="1366" height="728" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -322,8 +387,12 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
+<<<<<<< HEAD
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.39318183" />
+=======
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28395063" />
 >>>>>>> f26a14bf6407b9ef6c52621c0e0f715fd83b8dfd
+>>>>>>> 8a131086c3cea50d947b3e37197def79341331de
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -331,7 +400,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32781458" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -364,6 +433,8 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/jpa-consultas.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -409,6 +480,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> 8a131086c3cea50d947b3e37197def79341331de
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/Endereco.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -463,6 +535,49 @@
             <element signature="e#549#550#0" expanded="true" />
             <element signature="e#581#582#0" expanded="true" />
 >>>>>>> f26a14bf6407b9ef6c52621c0e0f715fd83b8dfd
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Professor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Pessoa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#823#824#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
           </folding>
         </state>
       </provider>

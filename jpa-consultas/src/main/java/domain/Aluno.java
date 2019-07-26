@@ -1,33 +1,32 @@
 package domain;
 
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
 @Entity
 public class Aluno implements Serializable {
 
-    @Id
-    private String matricuala;
+    private String matricula;
     private Date dataIngreso;
     private String turma;
 
     public Aluno() {
     }
 
-    public Aluno(String matricuala, Date dataIngreso, String turma) {
-        this.matricuala = matricuala;
+    public Aluno(String matricula, Date dataIngreso, String turma) {
+        this.matricula = matricula;
         this.dataIngreso = dataIngreso;
         this.turma = turma;
     }
 
-    public String getMatricuala() {
-        return matricuala;
+    public String getmatricula() {
+        return matricula;
     }
 
-    public void setMatricuala(String matricuala) {
-        this.matricuala = matricuala;
+    public void setmatricula(String matricula) {
+        this.matricula = matricula;
     }
 
     public Date getDataIngreso() {
@@ -49,7 +48,7 @@ public class Aluno implements Serializable {
     @Override
     public String toString() {
         return "Aluno{" +
-                "matricuala='" + matricuala + '\'' +
+                "matricula='" + matricula + '\'' +
                 ", dataIngreso=" + dataIngreso +
                 ", turma='" + turma + '\'' +
                 '}';
