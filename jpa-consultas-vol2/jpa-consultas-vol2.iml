@@ -21,6 +21,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+<<<<<<< HEAD
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.persistence:org.eclipse.persistence.jpa.modelgen.processor:2.5.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.persistence:org.eclipse.persistence.core:2.5.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.persistence:org.eclipse.persistence.asm:2.5.2" level="project" />
@@ -28,5 +29,8 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.persistence:javax.persistence:2.1.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.persistence:org.eclipse.persistence.antlr:2.5.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.persistence:org.eclipse.persistence.jpa.jpql:2.5.2" level="project" />
+=======
+    <orderEntry type="library" name="Maven: org.eclipse.persistence:javax.persistence:2.1.0" level="project" />
+>>>>>>> 7d67d2a797c267a3476124cd3a681a03d6fd0ac1
   </component>
 </module>
