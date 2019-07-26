@@ -1,14 +1,13 @@
 package domain;
 
-import javax.persistence.DiscriminatorValue;
+import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import java.io.Serializable;
-import java.time.LocalDate;
-import java.util.Date;
-import java.util.List;
 
 @Entity
 public class Autor extends Pessoa implements Serializable  {

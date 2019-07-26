@@ -1,14 +1,22 @@
 package domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
+@Entity
 public class Livro implements Serializable {
 
+	@Id
     private String ISBN;
     private String nome;
+    @Temporal(TemporalType.DATE)
     private Date lançamento;
 
     @ManyToMany(mappedBy = "livros")

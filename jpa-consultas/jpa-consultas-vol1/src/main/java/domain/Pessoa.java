@@ -12,6 +12,7 @@ public class Pessoa implements Serializable {
     @Id
     private String cpf;
     private int idade;
+    @Temporal(TemporalType.DATE)
     private Date dataNascimento;
     @Embedded
     private Endereco endereco;

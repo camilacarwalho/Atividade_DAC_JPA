@@ -1,6 +1,9 @@
 package domain;
 
 import javax.persistence.Entity;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -8,6 +11,7 @@ import java.util.Date;
 public class Aluno extends Pessoa implements Serializable  {
 
     private String matricula;
+    @Temporal(TemporalType.DATE)
     private Date dataIngreso;
     private String turma;
 

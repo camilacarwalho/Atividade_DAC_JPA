@@ -1,6 +1,7 @@
 package domain;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import java.io.Serializable;
@@ -8,6 +9,7 @@ import java.io.Serializable;
 @Entity
 public class Area implements Serializable {
 
+	@Id
     private int cod;
     private String nome;
 
