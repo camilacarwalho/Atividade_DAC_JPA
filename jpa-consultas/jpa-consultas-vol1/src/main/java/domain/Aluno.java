@@ -1,12 +1,11 @@
 package domain;
 
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-public class Aluno implements Serializable {
+public class Aluno extends Pessoa implements Serializable  {
 
     private String matricula;
     private Date dataIngreso;

@@ -6,17 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jpa-consulta" />
-        <module name="jpa-consultas" />
         <module name="jpa-consultas-vol2" />
+        <module name="jpa-consultas-vol1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-<<<<<<< HEAD
-      <module name="jpa-consultas-vol2" target="1.5" />
-=======
-      <module name="jpa-consulta" target="8" />
->>>>>>> 42f2a85dc32deed182b61cdb36f87c0483e6c748
+      <module name="jpa-consultas" target="1.5" />
+      <module name="jpa-consultas-vol1" target="1.8" />
+      <module name="jpa-consultas-vol2" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
