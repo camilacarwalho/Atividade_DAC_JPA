@@ -6,7 +6,7 @@ import java.util.Date;
 
 
 @Entity
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Pessoa implements Serializable {
     private String nome;
     @Id
