@@ -1,6 +1,10 @@
 package domain;
 
-public class Endereco {
+import javax.persistence.Embeddable;
+import java.io.Serializable;
+
+@Embeddable
+public class Endereco implements Serializable {
 
     private String rua;
     private String bairro;
