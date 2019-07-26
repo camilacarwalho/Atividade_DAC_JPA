@@ -1,9 +1,17 @@
 package domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Pessoa  implements Serializable {
+@Entity
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public class Pessoa implements Serializable {
+
+    @Id
     private int id;
     private String nome;
     private Date dataNascimento;
