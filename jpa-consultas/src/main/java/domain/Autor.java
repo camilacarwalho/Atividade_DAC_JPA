@@ -3,6 +3,7 @@ package domain;
 import javax.persistence.Entity;
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.Date;
 
 @Entity
 public class Autor extends Pessoa implements Serializable  {
@@ -12,8 +13,8 @@ public class Autor extends Pessoa implements Serializable  {
 
     }
 
-    public Autor(String nome, String cpf, int idade, LocalDate dataNascimento, String instituicaoVInculada) {
-        super(nome, cpf, idade, dataNascimento);
+    public Autor(String nome, String cpf, int idade, Date dataNascimento, Endereco endereco, String instituicaoVInculada) {
+        super(nome, cpf, idade, dataNascimento, endereco);
         this.instituicaoVInculada = instituicaoVInculada;
     }
 
