@@ -1,27 +1,32 @@
 package domain;
 
-import javax.persistence.DiscriminatorValue;
+import java.util.Date;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.CollectionTable;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
 public class Professor extends Pessoa  {
-    @OneToMany
-    private Set<Telefone> telefones = new HashSet<>();
+    @ElementCollection
+    @CollectionTable(name = "Telefones")
+    private List<Telefone> telefones;
 
     private Double salario;
 
     public Professor() { }
 
-    public Professor(String nome, String cpf, int idade, Date dataNascimento, Endereco endereco, Double salario) {
-        super(nome, cpf, idade, dataNascimento, endereco);
-        this.salario = salario;
-    }
+	public Professor(String nome, String cpf, int idade, Date dataNascimento, Endereco endereco,
+			List<Telefone> telefones, Double salario) {
+		super(nome, cpf, idade, dataNascimento, endereco);
+		this.telefones = telefones;
+		this.salario = salario;
+	}
 
-    public Double getSalario() {
+	public Double getSalario() {
         return salario;
     }
 

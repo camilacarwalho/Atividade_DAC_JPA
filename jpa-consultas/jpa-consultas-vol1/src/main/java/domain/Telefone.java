@@ -1,16 +1,16 @@
 package domain;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
 import java.io.Serializable;
 
-@Entity
+import javax.persistence.Embeddable;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+
+@Embeddable
 public class Telefone implements Serializable {
 
-	@Id
-	private int id;
-    private String numero;
+	private String numero;
+	@Enumerated(EnumType.STRING)
     private TelefoneType tipo;
 
     public Telefone() { }

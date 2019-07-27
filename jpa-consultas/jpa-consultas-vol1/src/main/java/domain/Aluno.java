@@ -18,13 +18,15 @@ public class Aluno extends Pessoa implements Serializable  {
     public Aluno() {
     }
 
-    public Aluno(String matricula, Date dataIngreso, String turma) {
-        this.matricula = matricula;
-        this.dataIngreso = dataIngreso;
-        this.turma = turma;
-    }
+    public Aluno(String nome, String cpf, int idade, Date dataNascimento, Endereco endereco, String matricula,
+			Date dataIngreso, String turma) {
+		super(nome, cpf, idade, dataNascimento, endereco);
+		this.matricula = matricula;
+		this.dataIngreso = dataIngreso;
+		this.turma = turma;
+	}
 
-    public String getmatricula() {
+	public String getmatricula() {
         return matricula;
     }
 
