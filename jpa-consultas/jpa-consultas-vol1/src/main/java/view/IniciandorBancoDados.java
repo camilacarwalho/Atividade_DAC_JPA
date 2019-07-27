@@ -4,12 +4,11 @@ import java.sql.Date;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
 
 import javax.persistence.EntityManager;
 
 import domain.Aluno;
+import domain.Autor;
 import domain.Endereco;
 import domain.Pessoa;
 import domain.Professor;
@@ -141,6 +140,59 @@ public class IniciandorBancoDados {
 					Arrays.asList(telefones[2]),
 					9425.37)
 	};
+	
+	private Autor[] autores = {
+		new Autor(
+				"Beatriz Eliane Lúcia Gonçalves", 
+				"944.444.968-86", 
+				45, 
+				Date.valueOf(LocalDate.of(1973, 10, 24)), 
+				new Endereco(
+						"Vila Araguaia, 619", 
+						"Pernambués",
+						"Salvador-BA",
+						"41110-150"), 
+				"Rascalovski", 
+				new ArrayList<>()),
+		new Autor(
+				"Vitória Heloisa Vera Teixeira", 
+				"416.648.264-59", 
+				70, 
+				Date.valueOf(LocalDate.of(1949, 04, 18)), 
+				new Endereco(
+						"Rua 4, 526", 
+						"Jardim dos Ipês III",
+						"Araguaína-TO",
+						"77820-340"), 
+				"Zeiwry", 
+				new ArrayList<>()),
+		new Autor(
+				"Aline Amanda da Silva", 
+				"401.244.252-08", 
+				41, 
+				Date.valueOf(LocalDate.of(1977, 10, 16)), 
+				new Endereco(
+						"Avenida Primeiro de Março, 520", 
+						"Centro",
+						"Novo Hamburgo-RS",
+						"93320-043"), 
+				"Rascalkun", 
+				new ArrayList<>()),
+		new Autor(
+				"Kevin Luan Bruno Ferreira", 
+				"053.622.447-10", 
+				35, 
+				Date.valueOf(LocalDate.of(1984, 04, 18)), 
+				new Endereco(
+						"Avenida Rio Negro, 282", 
+						"Curuzu",
+						"Salvador-BA",
+						"40365-720"), 
+				"Colossalchenko", 
+				new ArrayList<>())
+	};
+	
+	
 	
 	
 	private final EntityManager em;
