@@ -212,6 +212,9 @@ public class IniciandorBancoDados {
 		for (Professor professor : profesores) {
 			em.persist(professor);
 		}
+		for(Autor autor: autores){
+			em.persist(autor);
+		}
 		em.getTransaction().commit();
 		
 		
