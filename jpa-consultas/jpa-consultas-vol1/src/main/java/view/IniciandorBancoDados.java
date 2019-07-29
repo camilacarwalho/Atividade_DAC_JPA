@@ -7,13 +7,9 @@ import java.util.Arrays;
 
 import javax.persistence.EntityManager;
 
-import domain.Aluno;
-import domain.Autor;
-import domain.Endereco;
-import domain.Pessoa;
-import domain.Professor;
-import domain.Telefone;
-import domain.TelefoneType;
+import domain.*;
+
+import static domain.Livro_.autores;
 
 public class IniciandorBancoDados {
 	
@@ -57,7 +53,7 @@ public class IniciandorBancoDados {
 							"65065-680"),
 					"20171201002", 
 					Date.valueOf(LocalDate.of(2015, 4, 21)),
-					"ads.t1"),
+					"2017.1"),
 			new Aluno(
 					"Elaine Jéssica Corte Real", 
 					"346.640.612-93",
@@ -70,7 +66,7 @@ public class IniciandorBancoDados {
 							"76829-386"),
 					"20171201003", 
 					Date.valueOf(LocalDate.of(2015, 4, 21)),
-					"ads.t1"),
+					"2018.2"),
 			new Aluno(
 					"Igor Pedro Henrique de Paula", 
 					"152.821.262-22",
@@ -83,17 +79,17 @@ public class IniciandorBancoDados {
 							"78730-168"),
 					"20171201004", 
 					Date.valueOf(LocalDate.of(2015, 4, 21)),
-					"ads.t1")
+					"2019.1")
 	};
 	
 	private Telefone[][] telefones= {
 			{
-				new Telefone("(95) 3887-5412", TelefoneType.RESIDENCIAL),
+				new Telefone("(95) 3887-5418", TelefoneType.RESIDENCIAL),
 				new Telefone("(95) 99637-0393", TelefoneType.COMERCIAL)
 			},
 			{
 				new Telefone("(96) 3643-1597", TelefoneType.RESIDENCIAL),
-				new Telefone("(96) 98386-2044", TelefoneType.COMERCIAL)
+				new Telefone("(96) 98386-2048", TelefoneType.COMERCIAL)
 			},
 			{ 
 				new Telefone("(84) 2518-3617", TelefoneType.RESIDENCIAL),
@@ -113,7 +109,7 @@ public class IniciandorBancoDados {
 							"Chácara Cachoeira",
 							"Campo Grande-MT",
 							"79040-081"),
-					Arrays.asList(telefones[0]),
+					Arrays.asList(),
 					13513.21),
 			new Professor(
 					"Antônia Lavínia Natália Porto", 
@@ -121,7 +117,7 @@ public class IniciandorBancoDados {
 					24, 
 					Date.valueOf(LocalDate.of(1995, 3, 1)),
 					new Endereco(
-							"Rua Professor Aderson Araújo, 882", 
+							"Que atividade facil",
 							"Dom Jaime Câmara",
 							"Mossoró-RN",
 							"59628-501"),
@@ -140,58 +136,82 @@ public class IniciandorBancoDados {
 					Arrays.asList(telefones[2]),
 					9425.37)
 	};
+
+	private Livro[] livros = {
+			new Livro(
+					"8583681996",
+					"Arqueiro Verde",
+					Date.valueOf(LocalDate.of(2019,06,22)),
+					new ArrayList<>()
+
+			),
+			new Livro(
+					"8551001280",
+					"Mitologia Nórdica",
+					Date.valueOf(LocalDate.of(2017,03,13)),
+					new ArrayList<>()
+			),
+			new Livro(
+					"8594540787",
+					"Medo Clássico Vol1",
+					Date.valueOf(LocalDate.of(2019,02,21)),
+					new ArrayList<>()
+			)
+
+	};
 	
 	private Autor[] autores = {
 		new Autor(
-				"Beatriz Eliane Lúcia Gonçalves", 
-				"944.444.968-86", 
-				45, 
-				Date.valueOf(LocalDate.of(1973, 10, 24)), 
+				"Beatriz Eliane Lúcia Gonçalves",
+				"944.444.968-86",
+				45,
+				Date.valueOf(LocalDate.of(1973, 10, 24)),
 				new Endereco(
-						"Vila Araguaia, 619", 
+						"Vila Araguaia, 619",
 						"Pernambués",
-						"Salvador-BA",
-						"41110-150"), 
-				"Rascalovski", 
-				new ArrayList<>()),
+						"Cajazeiras-PB",
+						"41110-150"),
+				"Rascalovski",
+				Arrays.asList(livros[0])),
 		new Autor(
-				"Vitória Heloisa Vera Teixeira", 
-				"416.648.264-59", 
-				70, 
-				Date.valueOf(LocalDate.of(1949, 04, 18)), 
+				"Vitória Heloisa Vera Teixeira",
+				"416.648.264-59",
+				70,
+				Date.valueOf(LocalDate.of(1949, 04, 18)),
 				new Endereco(
-						"Rua 4, 526", 
+						"Rua 4, 526",
 						"Jardim dos Ipês III",
 						"Araguaína-TO",
-						"77820-340"), 
-				"Zeiwry", 
-				new ArrayList<>()),
+						"77820-340"),
+				"Zeiwry",
+				Arrays.asList(livros[1])),
 		new Autor(
-				"Aline Amanda da Silva", 
-				"401.244.252-08", 
-				41, 
-				Date.valueOf(LocalDate.of(1977, 10, 16)), 
+				"Aline Amanda da Silva",
+				"401.244.252-08",
+				41,
+				Date.valueOf(LocalDate.of(1982, 11, 21)),
 				new Endereco(
-						"Avenida Primeiro de Março, 520", 
+						"Avenida Primeiro de Março, 520",
 						"Centro",
-						"Novo Hamburgo-RS",
-						"93320-043"), 
-				"Rascalkun", 
-				new ArrayList<>()),
+						"Cajazeiras-PB",
+						"93320-043"),
+				"Rascalkun",
+				Arrays.asList(livros[2])),
 		new Autor(
-				"Kevin Luan Bruno Ferreira", 
-				"053.622.447-10", 
-				35, 
-				Date.valueOf(LocalDate.of(1984, 04, 18)), 
+				"Jason Luan Bruno Ferreira",
+				"053.622.447-10",
+				35,
+				Date.valueOf(LocalDate.of(1984, 04, 18)),
 				new Endereco(
-						"Avenida Rio Negro, 282", 
+						"Avenida Rio Negro, 282",
 						"Curuzu",
 						"Salvador-BA",
-						"40365-720"), 
-				"Colossalchenko", 
-				new ArrayList<>())
+						"40365-720"),
+				"Colossalchenko",
+				Arrays.asList(livros[0])
+		)
 	};
-	
+
 	
 	
 	
@@ -211,6 +231,9 @@ public class IniciandorBancoDados {
 		}
 		for (Professor professor : profesores) {
 			em.persist(professor);
+		}
+		for(Livro livro:livros){
+			em.persist(livro);
 		}
 		for(Autor autor: autores){
 			em.persist(autor);
