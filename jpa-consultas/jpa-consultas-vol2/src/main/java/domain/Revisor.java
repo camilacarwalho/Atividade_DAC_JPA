@@ -1,6 +1,7 @@
 package domain;
 
 import javax.persistence.Entity;
+import java.util.Date;
 
 @Entity
 public class Revisor extends Pessoa {
@@ -10,7 +11,8 @@ public class Revisor extends Pessoa {
     public Revisor() {
     }
 
-    public Revisor(String nota) {
+    public Revisor(int id, String nome, Date dataNascimento, String nota) {
+        super(id, nome, dataNascimento);
         this.nota = nota;
     }
 

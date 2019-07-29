@@ -1,9 +1,6 @@
 package domain;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -14,6 +11,7 @@ public class Pessoa implements Serializable {
     @Id
     private int id;
     private String nome;
+    @Temporal(TemporalType.DATE)
     private Date dataNascimento;
 
     public Pessoa() { }
