@@ -11,7 +11,10 @@ public class Publicacao implements Serializable {
     private int codPublicacao;
     private String titulo;
 
-    @OneToMany(mappedBy = "publicacao")
+    @OneToMany
+    @JoinTable(name="area_publicacao",
+                joinColumns = {@JoinColumn(name="publicacao_cod",referencedColumnName = "codPublicacao")},
+                inverseJoinColumns = {@JoinColumn(name="area_cod",referencedColumnName = "cod")})
     private List<Area> areas;
 
     @ManyToOne

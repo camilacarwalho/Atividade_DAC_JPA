@@ -1,9 +1,6 @@
 package domain;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -14,7 +11,9 @@ public class Area implements Serializable {
     private String nome;
 
     @ManyToOne
-    @JoinColumn(name="publicacao_id")
+    @JoinTable(name="area_publicacao",
+            joinColumns = {@JoinColumn(name = "area_id",referencedColumnName = "cod")},
+            inverseJoinColumns = {@JoinColumn(name="publicacao_id",referencedColumnName = "codPublicacao")})
     private Publicacao publicacao;
 
     public Area(int cod, String nome) {
