@@ -17,10 +17,9 @@ public class Area implements Serializable {
     @JoinColumn(name="publicacao_id")
     private Publicacao publicacao;
 
-    public Area(int cod, String nome, Publicacao publicacao) {
+    public Area(int cod, String nome) {
         this.cod = cod;
         this.nome = nome;
-        this.publicacao=publicacao;
     }
 
     public Area() {
