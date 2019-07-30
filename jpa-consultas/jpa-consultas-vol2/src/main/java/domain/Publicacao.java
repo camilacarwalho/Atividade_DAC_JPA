@@ -1,8 +1,6 @@
 package domain;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
@@ -16,21 +14,23 @@ public class Publicacao implements Serializable {
     @OneToMany(mappedBy = "publicacao")
     private List<Area> areas;
 
-    public Publicacao(int codPublicacao, String titulo, List<Area> areas) {
+    @ManyToOne
+    @JoinColumn(name = "revisor_id")
+    private Revisor revisor;
+
+    @ManyToOne
+    @JoinColumn(name = "escritor_id")
+    private Escritor escritor;
+
+    public Publicacao() {
+    }
+
+    public Publicacao(int codPublicacao, String titulo, List<Area> areas, Revisor revisor, Escritor escritor) {
         this.codPublicacao = codPublicacao;
         this.titulo = titulo;
         this.areas = areas;
-    }
-
-    public List<Area> getAreas() {
-        return areas;
-    }
-
-    public void setAreas(List<Area> areas) {
-        this.areas = areas;
-    }
-
-    public Publicacao() {
+        this.revisor = revisor;
+        this.escritor = escritor;
     }
 
     public int getCodPublicacao() {
@@ -47,5 +47,29 @@ public class Publicacao implements Serializable {
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
+    }
+
+    public List<Area> getAreas() {
+        return areas;
+    }
+
+    public void setAreas(List<Area> areas) {
+        this.areas = areas;
+    }
+
+    public Revisor getRevisor() {
+        return revisor;
+    }
+
+    public void setRevisor(Revisor revisor) {
+        this.revisor = revisor;
+    }
+
+    public Escritor getEscritor() {
+        return escritor;
+    }
+
+    public void setEscritor(Escritor escritor) {
+        this.escritor = escritor;
     }
 }
