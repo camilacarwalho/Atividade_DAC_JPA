@@ -9,7 +9,7 @@ import javax.persistence.EntityManager;
 
 import domain.*;
 
-import static domain.Livro_.autores;
+//import static domain.Livro_.autores;
 
 public class IniciandorBancoDados {
 	
@@ -82,21 +82,7 @@ public class IniciandorBancoDados {
 					"2019.1")
 	};
 	
-	private Telefone[][] telefones= {
-			{
-				new Telefone("(95) 3887-5418", TelefoneType.RESIDENCIAL),
-				new Telefone("(95) 99637-0393", TelefoneType.COMERCIAL)
-			},
-			{
-				new Telefone("(96) 3643-1597", TelefoneType.RESIDENCIAL),
-				new Telefone("(96) 98386-2048", TelefoneType.COMERCIAL)
-			},
-			{ 
-				new Telefone("(84) 2518-3617", TelefoneType.RESIDENCIAL),
-				new Telefone("(84) 98989-9890", TelefoneType.COMERCIAL)
-			}
-			
-	};
+
 	
 	private Professor[] profesores= {
 			new Professor(
@@ -109,7 +95,7 @@ public class IniciandorBancoDados {
 							"Chácara Cachoeira",
 							"Campo Grande-MT",
 							"79040-081"),
-					Arrays.asList(),
+					new ArrayList<>(),
 					13513.21),
 			new Professor(
 					"Antônia Lavínia Natália Porto", 
@@ -121,7 +107,7 @@ public class IniciandorBancoDados {
 							"Dom Jaime Câmara",
 							"Mossoró-RN",
 							"59628-501"),
-					Arrays.asList(telefones[1]),
+					new ArrayList<>(),
 					9425.37),
 			new Professor(
 					"Priscila Francisca Emily Baptista", 
@@ -133,32 +119,81 @@ public class IniciandorBancoDados {
 							"Dom Jaime Câmara",
 							"Boa Vista-RR",
 							"69316-492"),
-					Arrays.asList(telefones[2]),
-					9425.37)
+					new ArrayList<>(),
+					9425.37),
+            new Professor(
+                    "Ricardo Job",
+                    "111.111.111-01",
+                    35,
+                    Date.valueOf(LocalDate.of(1984,4,22)),
+                    new Endereco(
+                            "Que atividade facil",
+                            "Centro",
+                            "Cajazeiras",
+                            "58900-000"),
+                    new ArrayList<>(),
+                    8000.00
+            )
+	};
+	private Telefone[] telefones= {
+			new Telefone("(95) 3887-5418", TelefoneType.RESIDENCIAL,profesores[0]),
+			new Telefone("(95) 99637-0393", TelefoneType.COMERCIAL,profesores[0]),
+			new Telefone("(96) 3643-1597", TelefoneType.RESIDENCIAL,profesores[1]),
+			new Telefone("(96) 98386-2048", TelefoneType.COMERCIAL,profesores[1]),
+			new Telefone("(84) 2518-3617", TelefoneType.RESIDENCIAL,profesores[2]),
+			new Telefone("(84) 98989-9890", TelefoneType.COMERCIAL,profesores[2])
+
+
 	};
 
 	private Livro[] livros = {
 			new Livro(
-					"8583681996",
+					"40.986.886-3",
 					"Arqueiro Verde",
 					Date.valueOf(LocalDate.of(2019,06,22)),
 					new ArrayList<>()
 
 			),
 			new Livro(
-					"8551001280",
+					"48.724.584-2",
+					"Sobrevivendo ao 5º Período",
+					Date.valueOf(LocalDate.of(2019,06,01)),
+					new ArrayList<>()
+			),
+			new Livro(
+					"44.082.268-3",
+					"Existe vida durante DAC?",
+					Date.valueOf(LocalDate.of(2019,06,01)),
+					new ArrayList<>()
+			),
+			new Livro(
+					"24.255.793-4",
 					"Mitologia Nórdica",
 					Date.valueOf(LocalDate.of(2017,03,13)),
 					new ArrayList<>()
 			),
 			new Livro(
-					"8594540787",
+					"19.208.373-9",
 					"Medo Clássico Vol1",
 					Date.valueOf(LocalDate.of(2019,02,21)),
 					new ArrayList<>()
 			)
-
 	};
+	
+	private Livro[] grupoLivroI = { 
+			livros[1], 
+			livros[2]} ;
+	private Livro[] grupoLivroII = { 
+			livros[1], 
+			livros[4],
+			livros[2]} ;
+	private Livro[] grupoLivroIII = { 
+			livros[0], 
+			livros[3]} ;
+	private Livro[] grupoLivroIV = {
+			livros[4],
+			livros[3],
+			livros[2]} ;
 	
 	private Autor[] autores = {
 		new Autor(
@@ -172,7 +207,7 @@ public class IniciandorBancoDados {
 						"Cajazeiras-PB",
 						"41110-150"),
 				"Rascalovski",
-				Arrays.asList(livros[0])),
+				Arrays.asList(grupoLivroI)),
 		new Autor(
 				"Vitória Heloisa Vera Teixeira",
 				"416.648.264-59",
@@ -184,7 +219,7 @@ public class IniciandorBancoDados {
 						"Araguaína-TO",
 						"77820-340"),
 				"Zeiwry",
-				Arrays.asList(livros[1])),
+				Arrays.asList(grupoLivroII)),
 		new Autor(
 				"Aline Amanda da Silva",
 				"401.244.252-08",
@@ -196,7 +231,7 @@ public class IniciandorBancoDados {
 						"Cajazeiras-PB",
 						"93320-043"),
 				"Rascalkun",
-				Arrays.asList(livros[2])),
+				Arrays.asList(grupoLivroIII)),
 		new Autor(
 				"Jason Luan Bruno Ferreira",
 				"053.622.447-10",
@@ -208,8 +243,7 @@ public class IniciandorBancoDados {
 						"Salvador-BA",
 						"40365-720"),
 				"Colossalchenko",
-				Arrays.asList(livros[0])
-		)
+				Arrays.asList(grupoLivroIV))
 	};
 
 	
@@ -231,6 +265,9 @@ public class IniciandorBancoDados {
 		}
 		for (Professor professor : profesores) {
 			em.persist(professor);
+		}
+		for(Telefone telefone:telefones){
+			em.persist(telefone);
 		}
 		for(Livro livro:livros){
 			em.persist(livro);

@@ -11,8 +11,9 @@ import javax.persistence.OneToMany;
 
 @Entity
 public class Professor extends Pessoa  {
-    @ElementCollection
-    @CollectionTable(name = "Telefones")
+
+
+    @OneToMany(mappedBy = "professor",cascade = CascadeType.PERSIST)
     private List<Telefone> telefones;
 
     private Double salario;
