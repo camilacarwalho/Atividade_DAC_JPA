@@ -22,7 +22,7 @@ public class AppJPQL2 {
                 "IN(e.publicacoes) pu, IN(pu.areas) a WHERE e.id=3";
         TypedQuery<Object[]> query = em.createQuery(jpql,Object[].class);
         query.getResultList().forEach(
-                p-> System.out.println("Nome: "+p[0]+"\nPublicação: "+p[1]+"\nArea: "+p[2]+"\n")
+                p-> System.out.println("nome da pessoa: "+p[0]+"\n título da publicação: "+p[1]+"\n área: "+p[2]+"\n")
         );
     }
 
@@ -33,7 +33,7 @@ public class AppJPQL2 {
                 "WHERE LOWER(a.nome) like '%industria%' ";
         TypedQuery<Object[]> query = em.createQuery(jpql,Object[].class);
         query.getResultList().forEach(
-                p-> System.out.println("Publicação: "+p[0]+"\nRevisor: "+p[1]+"\n")
+                p-> System.out.println(" título da publicação: "+p[0]+"\nnome do revisor: "+p[1]+"\n")
         );
     }
 
@@ -51,7 +51,7 @@ public class AppJPQL2 {
                 "WHERE e.premios>3 GROUP BY e.nome";
         TypedQuery<Object[]> query = em.createQuery(jpql, Object[].class);
         query.getResultList().forEach(
-                e-> System.out.println("Escritor: "+e[0]+" com "+e[1]+" publicação(ões)")
+                e-> System.out.println("nome do escritor: "+e[0]+" quantidade de publicações: "+e[1])
         );
 
     }
