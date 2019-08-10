@@ -23,6 +23,8 @@ public class AppCriteria2 {
     //atributo id igual a 3.
     private static void letraA(EntityManager em) {
         CriteriaBuilder builder = em.getCriteriaBuilder();
+
+
         CriteriaQuery<Object[]> criteria = builder.createQuery(Object[].class);
         Root<Escritor> root = criteria.from(Escritor.class);
 
@@ -35,7 +37,7 @@ public class AppCriteria2 {
                 publicacaoAreaJoin.get("nome"));
 
         em.createQuery(criteria).getResultList().forEach(
-                p-> System.out.println("Nome: "+p[0]+"\nPublicação: "+p[1]+"\nArea: "+p[2]+"\n")
+                p-> System.out.println("pessoa: "+p[0]+"\ntítulo/publicação: "+p[1]+"\nárea: "+p[2]+"\n")
         );
     }
 
@@ -55,7 +57,7 @@ public class AppCriteria2 {
                 root.get("nome"))
                 .where(area);
         em.createQuery(criteria).getResultList().forEach(
-                p-> System.out.println("Publicação: "+p[0]+"\nRevisor: "+p[1]+"\n")
+                p-> System.out.println("publicação: "+p[0]+"\nrevisor: "+p[1]+"\n")
         );
     }
 
@@ -88,7 +90,7 @@ public class AppCriteria2 {
                 .groupBy(root.get("nome"));
 
         em.createQuery(criteria).getResultList().forEach(
-                e-> System.out.println("Escritor: "+e[0]+" com "+e[1]+" publicação(ões)")
+                e-> System.out.println("nome do escritor: "+e[0]+" quant. de publicações: "+e[1])
         );
 
 
