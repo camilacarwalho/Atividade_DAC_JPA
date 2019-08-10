@@ -17,10 +17,6 @@ public class AppCriteria2 {
                 .createEntityManager();
         new IniciadorBancoDeDados(em).dadosIniciais();
 
-//        letraA(em);
-//        letraB(em);
-//        letraC(em);
-//        letraD(em);
     }
 
     //O nome da pessoa, o título da publicação e o nome da área em que a pessoa tem o
