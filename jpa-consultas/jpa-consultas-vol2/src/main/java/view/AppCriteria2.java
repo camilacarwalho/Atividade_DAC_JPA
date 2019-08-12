@@ -21,7 +21,8 @@ public class AppCriteria2 {
 
     //O nome da pessoa, o título da publicação e o nome da área em que a pessoa tem o
     //atributo id igual a 3.
-    private static void letraA(EntityManager em) {
+    private static void letraA(EntityManager em) { //feito
+        //iniciando criteria
         CriteriaBuilder builder = em.getCriteriaBuilder();
 
 
